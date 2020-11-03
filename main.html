@@ -4,7 +4,7 @@
     <title>HTML Demo Project by Showmik Ahmed Pranta</title>
     <style>
         body {
-            background-color: yellow;
+            background-color: rgba(194, 214, 15, 0.336);
             size: 14pt;
         }
         
@@ -12,6 +12,14 @@
             background-color: aqua;
             text-align: center;
             border-radius: 20px;
+            opacity: 0.9;
+            box-shadow: 5px 2px;
+            word-spacing: 10px;
+            letter-spacing: 3px;
+        }
+        
+        h1:hover {
+            background-color: white;
         }
         
         h2 {
@@ -19,12 +27,22 @@
             text-align: center;
             border-radius: 10px;
             color: white;
+            opacity: 0.7;
+        }
+        
+        h2:hover {
+            background-color: orange;
         }
         
         h3 {
             background-color: aquamarine;
             text-align: center;
             border-radius: 15px;
+            opacity: 0.5;
+        }
+        
+        h3:hover {
+            background-color: white;
         }
         
         td {
@@ -34,9 +52,17 @@
             border-radius: 10px;
         }
         
+        td:hover {
+            background-color: white;
+        }
+        
         ol {
             background-color: blanchedalmond;
             border-radius: 15px;
+        }
+        
+        ol:hover {
+            background-color: white;
         }
         
         .li1 {
@@ -45,17 +71,34 @@
             border-style: ridge;
         }
         
+        .lil:hover {
+            background-color: white;
+        }
+        
         dt {
             width: auto;
             background-color: cornflowerblue;
+            padding: 5px;
+        }
+        
+        dt:hover {
+            background-color: white;
         }
         
         dd {
             width: auto;
             background-color: rgb(199, 250, 15);
+            overflow: scroll;
+            max-height: 200px;
+            box-shadow: 5px 2px red;
         }
         
-        .kb {
+        dd:hover {
+            background-color: cyan;
+        }
+        
+        th.kb,
+        td.kb {
             background: none;
         }
         
@@ -66,7 +109,7 @@
         
         .tc {
             width: auto;
-            background-color: blue;
+            background-color: rgb(255, 153, 0);
         }
         
         .s {
@@ -79,8 +122,8 @@
 <body>
     <p id="Top"></p>
     <img src="ReviseGrammar.png" alt="logo" title="Revise Grammar" width=100% height=auto />
-    <h1>Forgot <i>English Grammar</i> Studied Long Ago?</h1>
-    <h2> This Website helps to learn <i><abbr
+    <h1>Want to learn <i>English Grammar</i> ?</h1>
+    <h2> This Website helps you learn <i><abbr
             title="English grammar is the way in which meanings are encoded into wordings in the English language.">English
             Grammar</abbr></i> quickly !!!</h2>
     <hr />
@@ -109,7 +152,7 @@
     </p>
     <p id="About">
         <h2>About</h2>
-        <p class="about">After passing primary, high school & college people often forgets even the basics of English Grammar. If you want to begin from scratch, start basic level. Otherwise start Intermediate or Advanced Level as per your need</p>
+        <p class="about">After passing primary, high school & college people often forget even the basics of English Grammar. If you want to begin from scratch, start basic level. Otherwise start Intermediate or Advanced Level as per your need</p>
 
         <p id="Basic">
             <h2>Basic</h2>
@@ -132,7 +175,7 @@
                         <img src="Alphabets.png" width="200" alt="alphabets.png" title="Alphabets">
                 </dd>
                 <figcaption>
-                    <h6 style="color:lawngreen">Fig: Alphabets</h6>
+                    <h5 align="center" style="color:rgb(27, 29, 25)">Fig: Alphabets</h6>
                 </figcaption>
                 </figure>
                 </dd>
@@ -245,7 +288,7 @@
             <form>
                 <p>Choose the right answer:</p>
                 <ol>
-                    <li>
+                    <li class="mcq1">
                         <p>Which word is singular of thou ?</p>
                         <input type="radio" id="he" name="i" value="he">
                         <label for="he">he</label></br>
@@ -256,7 +299,7 @@
                         <input type="radio" id="your" name="i" value="your">
                         <label for "your">your</label>
                     </li>
-                    <li>
+                    <li class="mcq2">
                         <p>How many letters are in alphabet?</p>
                         <input type="radio" id="50" name="ii" value="50">
                         <label for="50">50</label>
@@ -271,7 +314,6 @@
                 </ol>
             </form>
         </p>
-
         <p id="Intermediate">
             <h2>Intermediate</h2>
             <dl>
@@ -349,7 +391,7 @@
         <p id="Developer">
             <address>
     <h2>Developer</h2>
-    This website is built using HTML by Showmik Ahmed Pranta. He is a CSE student currently studying in RUET, Rajshahi,
+    This website is built using HTML and CSS by Showmik Ahmed Pranta. He is a CSE student currently studying in RUET, Rajshahi,
     Bangladesh.For any queries he can be reached through:
     <a href="mailto:showmikahmedpranta@gmail.com">showmikahmedpranta@gmail.com</a>
 </address>
