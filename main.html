@@ -4,7 +4,7 @@
     <title>HTML Demo Project by Showmik Ahmed Pranta</title>
     <style>
         body {
-            background-color: rgba(194, 214, 15, 0.336);
+            background-color: rgba(240, 216, 4, 0.829);
             size: 14pt;
         }
         
@@ -17,9 +17,14 @@
             word-spacing: 10px;
             letter-spacing: 3px;
         }
-
-        h1:hover{
-        	background-color:white;
+        
+        h1:hover {
+            background-color: white;
+            color: black;
+            border-style: solid;
+            border-color: black;
+            transform: scale(1.1);
+            transition: 0.7s;
         }
         
         h2 {
@@ -29,9 +34,13 @@
             color: white;
             opacity: 0.7;
         }
-
-        h2:hover{
-        	background-color:orange;
+        
+        h2:hover {
+            background-color: white;
+            color: black;
+            border-style: solid;
+            border-color: darkblue transform: scaleY(1.3);
+            transition: 0.7s;
         }
         
         h3 {
@@ -40,29 +49,33 @@
             border-radius: 15px;
             opacity: 0.5;
         }
-
-        h3:hover{
-        	background-color:white;
+        
+        h3:hover {
+            background-color: white;
         }
         
         td {
-            background-color: rgb(192, 202, 207);
+            background-color: rgba(240, 14, 14, 0.247);
             width: 1%;
             height: 30px;
             border-radius: 10px;
         }
-
-        td:hover{
-        	background-color:white;
+        
+        td:hover {
+            background-color: white;
+            transform: scaleY(1.2);
+            transition: .7s;
+            border-style: solid;
+            border-color: black;
         }
         
         ol {
             background-color: blanchedalmond;
             border-radius: 15px;
         }
-
-        ol:hover{
-        	background-color:white;
+        
+        ol:hover {
+            background-color: white;
         }
         
         .li1 {
@@ -70,9 +83,9 @@
             border-radius: 5px;
             border-style: ridge;
         }
-
-        .lil:hover{
-        	background-color:white;
+        
+        .lil:hover {
+            background-color: white;
         }
         
         dt {
@@ -80,9 +93,9 @@
             background-color: cornflowerblue;
             padding: 5px;
         }
-
-        dt:hover{
-        	background-color:white;
+        
+        dt:hover {
+            background-color: white;
         }
         
         dd {
@@ -92,15 +105,15 @@
             max-height: 200px;
             box-shadow: 5px 2px red;
         }
-
-        dd:hover{
-        	background-color:cyan;
+        
+        dd:hover {
+            background-color: cyan;
         }
         
-        th.kb,td.kb {
+        th.kb,
+        td.kb {
             background: none;
         }
-
         
         .ti {
             width: auto;
@@ -116,14 +129,21 @@
             width: auto;
             background-color: white;
         }
+        
+        h3:hover {
+            transform: scaleY(2);
+            transition: 0.7s;
+            border-style: double;
+            border-color: darkorchid;
+        }
     </style>
 </head>
 
 <body>
     <p id="Top"></p>
     <img src="ReviseGrammar.png" alt="logo" title="Revise Grammar" width=100% height=auto />
-    <h1>Forgot <i>English Grammar</i> Studied Long Ago?</h1>
-    <h2> This Website helps to learn <i><abbr
+    <h1>Want to learn <i>English Grammar</i> ?</h1>
+    <h2> This Website helps you learn <i><abbr
             title="English grammar is the way in which meanings are encoded into wordings in the English language.">English
             Grammar</abbr></i> quickly !!!</h2>
     <hr />
@@ -152,7 +172,7 @@
     </p>
     <p id="About">
         <h2>About</h2>
-        <p class="about">After passing primary, high school & college people often forgets even the basics of English Grammar. If you want to begin from scratch, start basic level. Otherwise start Intermediate or Advanced Level as per your need</p>
+        <p class="about">After passing primary, high school & college people often forget even the basics of English Grammar. If you want to begin from scratch, start basic level. Otherwise start Intermediate or Advanced Level as per your need</p>
 
         <p id="Basic">
             <h2>Basic</h2>
@@ -288,7 +308,7 @@
             <form>
                 <p>Choose the right answer:</p>
                 <ol>
-                    <li>
+                    <li class="mcq1">
                         <p>Which word is singular of thou ?</p>
                         <input type="radio" id="he" name="i" value="he">
                         <label for="he">he</label></br>
@@ -299,7 +319,7 @@
                         <input type="radio" id="your" name="i" value="your">
                         <label for "your">your</label>
                     </li>
-                    <li>
+                    <li class="mcq2">
                         <p>How many letters are in alphabet?</p>
                         <input type="radio" id="50" name="ii" value="50">
                         <label for="50">50</label>
@@ -314,7 +334,6 @@
                 </ol>
             </form>
         </p>
-
         <p id="Intermediate">
             <h2>Intermediate</h2>
             <dl>
